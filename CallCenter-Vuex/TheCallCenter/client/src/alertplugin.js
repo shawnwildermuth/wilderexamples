@@ -1,6 +1,6 @@
 ﻿export default store => {
   store.subscribe((mutation, state) => {
-    if (mutation.type === "removeCall") {
+    if (mutation.type === "setError") {
       alert("Call removed!");
     }
   });
