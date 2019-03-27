@@ -2,11 +2,13 @@ import Vue from 'vue';
 import Vuex from 'vuex';
 import axios from "axios";
 import router from "./router";
+import alertPlugin from "./alertplugin";
 
 Vue.use(Vuex);
 
 var store = new Vuex.Store({
   strict: true,
+  plugins: [alertPlugin],
   state: {
     calls: [],
     error: ""
